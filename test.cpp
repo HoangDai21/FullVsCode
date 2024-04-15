@@ -11,7 +11,7 @@ class Connguoi{
     friend istream & operator>> (istream &in, Connguoi &a){
         cout << "nhap ten: ";
         fflush(stdin);
-        cin.getline(a.ten,30);;
+        cin.getline(a.ten,30);
         cout << "nhap nam sinh: ";
         cin >>a.namsinh;
         return in;
