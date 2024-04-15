@@ -7,8 +7,7 @@ class Connguoi{
         char ten[30];
         int namsinh;
     public:
-        char ten[30];
-        int namsinh;
+       
     friend istream & operator>> (istream &in, Connguoi &a){
         cout << "nhap ten: ";
         fflush(stdin);
@@ -25,4 +24,9 @@ class Connguoi{
 };
 int main(){
     Connguoi a;
+    cout << "nhap thong tin: "<<endl;
+    cin >> a;
+    cout << "xuat thong tin: "<<endl;
+    cout <<a;
+    return 0;
 }
