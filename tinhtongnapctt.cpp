@@ -1,38 +1,4 @@
 
-#include <iostream>
-using namespace std;
-
-class tinhtong{
-private:
-   int a,b;
-   public:
-    friend istream &operator >>( istream &in, tinhtong &a){
-        cout << "nhap a: ";in >> a.a;
-        cout << "nhap b: ";in >> a.b;
-        return in;
-    }
-    friend ostream &operator << (ostream &out , tinhtong a){
-        if(a.b>0){
-				out<<a.a<<"+"<<a.b<<"i"<<endl;
-			} 
-			else 
-				out<<a.a<<"-"<<a.b<<"i"<<endl; 
-    }
-    tinhtong &operator + (tinhtong a){
- 			tinhtong sum;
-			sum.a=this->a+a.a;
-			sum.a=this->b+a.b; 
-			return sum;      
-        }
-};
-int main(){
-	tinhtong m,n;
-	cin >> m;
-	cin >> n;
-	cout << "tong 2 so phuc: "<< m+n;
-	return 0;
-}
-*/
 #include<iostream>
 using namespace std;
 class so_phuc{
@@ -51,7 +17,8 @@ class so_phuc{
 				out<<k.a<<"+"<<k.b<<"i"<<endl;
 			} 
 			else 
-				out<<k.a<<"-"<<k.b<<"i"<<endl; 
+				out<<k.a<<"-"<<k.b<<"i"<<endl;
+                return out; 
 		}
 		so_phuc operator +(so_phuc k){
 			so_phuc tong;
@@ -67,5 +34,4 @@ int main(){
 	cout<<"Tong 2 so phuc: "<<m+n;
 	return 0; 
 	
-	 
 }
