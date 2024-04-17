@@ -16,7 +16,7 @@ class Connguoi{
         cin >>a.namsinh;
         return in;
     }
-    friend ostream &operator << ( ostream &out, Connguoi a){
+    friend ostream & operator << ( ostream &out, Connguoi a){
         cout << "ho ten la: "<<a.ten<<endl;
         cout << "nam sinh la: "<<a.namsinh<<endl;
         return out;
@@ -27,6 +27,6 @@ int main(){
     cout << "nhap thong tin: "<<endl;
     cin >> a;
     cout << "xuat thong tin: "<<endl;
-    cout <<a;
+    cout << a;
     return 0;
 }
