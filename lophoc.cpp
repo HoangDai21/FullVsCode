@@ -24,14 +24,35 @@ class HocSinh{
     }
     friend void xuat(HocSinh a[],int n){
         for(int i = 0; i < n; i++){
-            cout << "====================="<<endl;
+            cout << "============================"<<endl;
             cout << "ho va ten hoc sinh la: "<< a[i].Ho_ten << endl;
             cout << "lop cua hoc sinh la: "<<a[i].Lop << endl;
             cout << "diem toan la: "<< a[i].DiemToan << endl;
             cout << "diem van la: "<< a[i].DiemVan << endl;
             cout << "diem anh la: "<< a[i].DiemAnh << endl;
+            //cout << "diem trung binh la: "<<DiemTB(a) <<endl;
         }
     }
+   /*friend float DiemTB(HocSinh a[],int n){
+       	return (a->DiemAnh + a->DiemToan + a->DiemVan) / 3;
+    }
+    friend void Lop12A2(HocSinh a[], int n){
+        for( int i = 0; i < n; i++){
+            if(a[i].Lop == "12A2" || a[i].Lop == "12a2"){
+                xuat(a,n);
+                cout << endl;
+            }
+        }
+    }
+    void HSG(HocSinh a[],int n){
+        for(int i = 0; i < n; i++){
+            if(DiemTB(a) >= 8){
+                xuat(a,n);
+                cout << endl;
+            }
+        }
+    }*/
+   // void max(HocSinh a[],)
 };
 int main(){
     int n;
@@ -39,4 +60,5 @@ int main(){
     HocSinh a[n];
     nhap(a,n);
     xuat(a,n);
+   // Lop12A2(a,n);
 }
