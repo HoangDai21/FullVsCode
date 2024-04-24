@@ -1,4 +1,5 @@
 //ham ban+ nap chong toan tu in\out
+/*
 #include <iostream>
 using namespace std;
 
@@ -29,4 +30,14 @@ int main(){
     cout << "xuat thong tin: "<<endl;
     cout <<a;
     return 0;
+}*/
+#include <iostream>
+
+int main(){
+    int a = 10;
+    int *b;
+    b = &a;
+    std::cout << b <<std::endl
+    <<*b;
+
 }
