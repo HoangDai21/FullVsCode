@@ -65,10 +65,13 @@ void Sapxep(People a[], int n){
 void Bac_si(People a[], int &n){
     for (int i = 0; i < n; i++){
         if(strcmp(a[i].get_nghe_nghiep(), "bac si") ){
-            cout << "danh sach bac si la: "<<endl;
+            cout << "\ndanh sach bac si la: "<<endl;
             a[i].Xuat();
         }else cout << "sai roi ";
     }
+}
+void Campuchia(People a[], int n){
+    
 }
 int main(){
     int n;
